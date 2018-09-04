@@ -41,4 +41,23 @@ def closest_int_same_weight(x):
         ind = len(bin(lsb))-2
         x^=(1<<ind)|(1<<(ind+1)) #based on epi formula which works on indices
     return x
+
+#4.11 Rectangle Intersection
+
+#Q1: Given 4 points in a plane how would you check if they are a rectangle. 
+
+def is_rect(p1,p2,p3,p4)
+    '''Assumes a point object with point.x and point.y designating the coordinates of the point
+    
+    Args:p1,p2,p3,p4 are point objects
+    
+    Returns: True or False if the points create a rectangle'''
+    #The brute force method is to calculat distances between all the points
+
+
+#Q2: Given 2 rectangles not necessarily aligned with X and Y how do you determin if there is an intersection. 
+
+#assume Rect object of 4 points p1,p2,p3,p4 as defined by point objects above. 
+def do_intersect(r1,r2):
+    #brute force is make a bounded zone using lines from r1 and loop through the points in r2 to determine if they are inside r1. 
         
